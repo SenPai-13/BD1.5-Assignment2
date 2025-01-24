@@ -1,8 +1,9 @@
 const express = require('express');
 const { resolve } = require('path');
-
+const cors = require('cors');
 const app = express();
 const port = 3000;
+app.use(cors());
 
 // BD1.5 - Assignment 2 : Endpoint 1: Calculate the Returns of the Stocks added
 
